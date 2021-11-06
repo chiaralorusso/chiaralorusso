@@ -1,0 +1,473 @@
+@font-face {
+  font-family: "Poppins", sans-serif;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+html, body {height: 100%; width: 100%;}
+body {font-family: "Poppins", sans-serif; background-color: #eee;}
+
+/*Header*/
+.header {background-color: #13322B; overflow: hidden;}
+
+.header-home {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;}
+.header-home:hover {background-color: #000;}
+
+.header-menu {float: right;}
+.header-menu-item {display: inline-block;}
+.header-menu-item a {
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;}
+.header-menu-item a:hover {background-color: #000;}
+
+.header-icon {
+  display: block;
+  float: right;
+  padding: 15px;
+  display: none;}
+.header-icon span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  margin-bottom: 5px;}
+.header-icon:hover {background-color: #000;}
+
+
+/*Cover*/
+.cover {
+  height: 80%;
+  background-color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;}
+
+.cover-filter {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;}
+
+.cover-caption {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;}
+
+.cover-caption-copy {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;}
+
+/* cover portfolio page */
+.cover-portfolio {
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1120&q=80");}
+
+/* cover skills page */
+.cover-skills {
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1496087347462-c47891c1245c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1155&q=80");}
+
+/* cover about page */
+.cover-about {
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1515232009885-bffa6149eb02?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");}
+
+/* cover contact page */
+.cover-contact {
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+  background-position: center;
+  background-size: cover;}
+
+
+/*Button*/
+.button {
+  display: inline-block;
+  background-color: #13322B;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;}
+a:link, a:visited [button] {color: #fff; text-decoration: none;}
+
+
+/*Titoli e paragrafi*/
+h1, h2, h3 {line-height: 90px;}
+h1 {font-size: 100px; font-weight: normal;}
+h2 {font-size: 50px;  font-weight: lighter;}
+h3 {font-size: 30px;  font-weight: normal;}
+h3 a:link, a:visited {color: #fff; text-decoration: none;}
+h4 {font-size: 10px;  font-weight: normal; color: #000;}
+h4 a:link, a:visited, {color: #fff;}
+
+p {clear: both; margin-top: -30px;}
+
+/*Cards*/
+.cards {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;}
+
+.card {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background: #fff;}
+
+.card-image {
+  width: 100%;
+  height: auto;}
+
+.card-copy {
+  padding: 20px;
+  text-align: center;}
+
+/* cards portfolio page */
+.cards-portfolio {max-width: 68%; margin: 0 5px;}
+
+/*Banner page*/
+.banner {
+  background-color: #fff;
+  width: 96%;
+  height: 50%;
+  padding: 10px;
+  margin: 30px;
+  display: block;}
+  
+/* banner skills page */
+.banner-image-lingue img{
+  width: 55%;
+  display: block;
+  margin: 30px 200px;}
+
+.banner-image-software img {
+  width: 70%;
+  display: block;
+  margin: 30px 200px;}
+
+.banner-image-certificazioni img {
+  width: 70%;
+  display: block;
+  margin: 30px 200px;}
+
+.banner-image-copy img {display: block; display: none;}
+
+
+/* banner about page */
+.banner-about {
+  margin-bottom: 5px;
+  background-image: url("https://images.unsplash.com/photo-1497211419994-14ae40a3c7a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: bottom;
+  display: block;}
+
+.banner-copy-about {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #13322B;}
+
+.banner-copy-about h1 {font-weight: lighter; font-size: 90px;}
+.banner-copy-about h2 {font-weight: normal; font-size: 45px;}
+.banner-copy-about p {font-size: 20px; line-height: 15px; padding: 50px;}
+
+/* card about page */
+.card-copy-about {text-align: left; display: block;}
+.card-copy-about h3 {font-size: 20px; text-decoration: overline;}
+.card-copy-about h4 {font-size: 30px; padding: 20px; padding-top: 20px;}
+.card-copy-about p {font-size: 20px; line-height: 30px; padding: 20px; padding-top: 10px;}
+.card-formazione {height: 50%;}
+
+
+/*Footer*/
+.footer {
+  background-color: #13322B;
+  padding: 10px;
+  color: #fff;
+  clear: both;}
+
+.contacts {
+  padding: 20px;
+  line-height: 80px;
+  text-align: center;}
+
+/*Contact page*/
+ .invite h2 {
+   font-size: 25px;
+   font-weight: normal;
+   text-align: center;
+   padding: 50px;
+   padding-bottom: 0px;}
+
+.speaker-form-header {
+  display: grid;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #13322B;
+  border-radius: 5px;
+
+  max-width: 1000px;
+  margin: 50px 300px;
+  padding: 50px;
+  font-size: 20px;}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;}
+
+.form-row input, textarea {
+  background-color: #eee;
+  border: 1px solid #13322B;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px;
+  font-size: 20px;}
+
+.form-row textarea {
+  font-family: "Poppins", sans-serif;
+  min-height: 200px;
+  margin-bottom: 10px;
+  resize: none;}
+
+.form-row label {margin-bottom: 15px;}
+
+.form-row button {
+  background-color: #13322B;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+
+  width: 50%;
+  padding: 10px 20px;
+  margin: 0 200px;}
+
+
+
+/*Tablet normal screen*/
+@media only screen and (max-width: 1024px) {
+  .header {position: fixed; width: 100%; z-index: 100;}
+  h1, h2, h3 {line-height: 80px;}
+  h1 {font-size: 100px;  font-weight: bolder;}
+  h2 {font-size: 50px;  font-weight: lighter;}
+  h3 {font-size: 20px;  font-weight: 500;}
+  h3 a:link, a:visited {color: #fff; text-decoration: none;}
+  h4 {font-size: 10px;  font-weight: normal; color: #000;}
+  h4 a:link, a:visited, {color: #fff;}
+
+  .cards {display: block; margin: 0;}
+  .card {width: 100%; margin: 0; margin-top: 30px;}
+  .cards-portfolio {max-width: 100%; padding-top: 5px;}
+
+  /* skills page */
+  .banner {display: flex; width: 95%; height: 400px; justify-content: center;}
+  .banner-image-lingue img {display: block; width: 70%; margin: 30px 100px;}
+  .banner-image-software img {display: block; width: 80%; margin: 30px 100px;}
+  .banner-image-certificazioni img {display: block; width: 80%; margin: 30px 100px;}
+
+  /* about page */
+  .banner-about {margin: 20px; height: 450px;}
+  .banner-copy-about {width: 100%; margin: 0; padding: 20px;}
+  .banner-copy-about h1 {font-size: 50px;}
+  .banner-copy-about h2 {font-size: 30px;}
+  .banner-copy-about p {font-size: 20px; line-height: 30px; padding: 20px;}
+
+  .card-copy-about {padding: 10px;}
+  .card-copy-about h2 {font-size: 50px;}
+  .card-copy-about h3 {font-size: 20px; }
+  .card-copy-about h4 {font-size: 30px; padding: 20px; padding-top: 20px;}
+  .card-copy-about p {font-size: 20px; }
+
+  /*Contact page*/
+  .invite h2 {font-size: 30px; line-height: 40px;}
+
+  .speaker-form-header,
+  .speaker-form {width: 950px; margin-left: 30px; padding: 0;}
+
+  .speaker-form-header {background-color: #eee; background-image: none; border: none;}
+  .speaker-form-header h2 {font-size: 10px;}
+
+  .form-row {margin-bottom: 20px;}
+
+  .form-row input, textarea {background-color: #fff;}
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row textarea, {
+    width: 250px;
+    height: initial;}
+
+  .form-row label {font-size: 20px; width: 120px;}
+
+  .form-row button {margin: 0 250px;}
+}
+
+/*Smartphone bigger screen*/
+@media only screen and (max-width: 768px) {
+  .header {position: fixed; width: 100%; z-index: 100;}
+  .header-icon {display: block; padding: 20px;}
+  .header-menu {width: 100%; height: 0px; overflow: hidden;}
+  .header-menu-item {display: block;}
+  .is-open {height: 200px; overflow: auto;}
+
+  .cover {height: 100%; background-position: center;}
+
+  h1, h2, h3 {line-height: 80px;}
+  h1 {font-size: 50px;  font-weight: bolder;}
+  h2 {font-size: 30px;  font-weight: lighter;}
+  h3 {font-size: 20px;  font-weight: 500;}
+  h3 a:link, a:visited {color: #fff; text-decoration: none;}
+  h4 {font-size: 10px;  font-weight: normal; color: #000;}
+  h4 a:link, a:visited, {color: #fff;}
+
+  .cards {display: block; margin: 0;}
+  .card {width: 100%; margin: 0; margin-top: 10px;}
+  .cards-portfolio {max-width: 100%; padding-top: 5px;}
+
+  /* skills page */
+  .banner {display: block; width: 90%; height: 250px; margin: 10px 40px;}
+  .banner-image-lingue img {display: block; width: 450px; margin: 10px 40px;}
+  .banner-image-software img {display: block; width: 450px; margin: 20px 40px;}
+  .banner-image-certificazioni img {display: block; width: 450px; margin: 20px 30px;}
+
+  /* about page */
+  .banner-about {display: block; margin-bottom: 0px; height: 500px;}
+  .banner-copy-about {height: 100%; padding: 10px;}
+  .banner-copy-about  h1 {font-weight: lighter; padding: 20px;}
+  .banner-copy-about  h2 {font-weight: normal; font-size: 30px; line-height: 40px; padding: 10px;}
+  .banner-copy-about  p  {font-size: 20px; line-height: 30px; margin-top: 5px; padding: 20px;}
+
+  .card-copy-about {padding: 10px;}
+  .card-copy-about h2 {font-size: 28px;}
+  .card-copy-about h3 {font-size: 17px; margin-bottom: 5px;}
+  .card-copy-about h4 {padding-top: 0;}
+  .card-copy-about p {margin-bottom: 30px;}
+
+  /*Contact page*/
+  .invite h2 {line-height: 35px; }
+
+  .speaker-form-header,
+  .speaker-form {width: 95%; margin-left: 5px; padding: 0;}
+
+  .speaker-form-header {background-color: #eee; background-image: none; border: none;}
+  .speaker-form-header h2 {font-size: 10px;}
+
+  .form-row {margin-bottom: 20px;}
+
+  .form-row input, textarea {background-color: #fff;}
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row textarea, {
+    width: 250px;
+    height: initial;}
+
+  .form-row label {font-size: 20px; width: 120px;}
+
+  .form-row button {margin: 0 200px;}
+}
+
+/*Smartphone normal screen*/
+@media only screen and (max-width: 480px) {
+  .header {position: fixed; width: 100%; z-index: 100;}
+  .header-icon {display: block; padding: 20px;}
+  .header-menu {width: 100%; height: 0px; overflow: hidden;}
+  .header-menu-item {display: block;}
+  .is-open {height: 200px; overflow: auto;}
+
+  .cover {height: 100%; background-position: center;}
+
+  h1, h2, h3 {line-height: 80px;}
+  h1 {font-size: 50px;  font-weight: bolder;}
+  h2 {font-size: 30px;  font-weight: lighter;}
+  h3 {font-size: 15px;  font-weight: 500;}
+  h3 a:link, a:visited {color: #fff; text-decoration: none;}
+  h4 {font-size: 10px;  font-weight: normal; color: #000;}
+  h4 a:link, a:visited, {color: #fff;}
+
+  .cards {display: block; margin: 0;}
+  .card {width: 100%; margin: 0; margin-top: 10px;}
+  .cards-portfolio {max-width: 100%; padding-top: 5px;}
+
+  /* skills page */
+  .banner {display: block; width: 90%; height: 100%; margin: 21px; margin-top: 10px;}
+  .banner-image-lingue, .banner-image-software, .banner-image-certificazioni {display: none;}
+  .banner-image-copy img {display: block; width: 90%; height: 20%; margin: 0px 15px; margin-top: 10px;}
+
+  /* about page */
+  .banner-about {display: block; margin-bottom: 0px; height: 700px;}
+  .banner-copy-about {height: 100%; padding: 10px;}
+  .banner-copy-about  h1 {font-weight: lighter; padding: 25px;}
+  .banner-copy-about  h2 {font-weight: normal; font-size: 30px; line-height: 40px; padding: 0px 30px;}
+  .banner-copy-about  p  {font-size: 20px; line-height: 35px; margin-top: 15px; padding: 20px 15px;}
+
+  .card-copy-about {padding: 10px;}
+  .card-copy-about h2 {font-size: 28px;}
+  .card-copy-about h3 {font-size: 17px; margin-bottom: 5px;}
+  .card-copy-about h4 {padding-top: 0;}
+  .card-copy-about p {margin-bottom: 30px;}
+
+  /*Contact page*/
+  .invite h2 {line-height: 35px; }
+
+  .speaker-form-header,
+  .speaker-form {width: 300px; margin: 0px; margin-left: 15px; padding: 0;}
+
+  .speaker-form-header {background-color: #eee; background-image: none; border: none;}
+  .invite h2 {font-size: 20px; padding: 30px;}
+
+  .form-row {margin-bottom: 20px;}
+
+  .form-row input, textarea {background-color: #fff;}
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row textarea, {
+    width: 240px;
+    height: initial;}
+
+  .form-row label {font-size: 20px; width: 120px;}
+
+  .form-row button {margin: 0; margin-left: 80px;}
+}
+
+/*Smartphone smaller screen*/
+@media only screen and (max-width: 330px) {
+  /* skills page */
+  .banner {height: 90%;}
+  .banner-image-lingue,
+  .banner-image-software,
+  .banner-image-certificazioni {display: none;}
+  .banner-image-copy img {display: block; width: 90%; height: 30%; margin: 0px 15px; margin-top: 10px;}
+
+  /* about page */
+  .banner-about {height: 600px;}
+  .banner-copy-about h1 {font-size: 80px; padding: 10px;}
+  .banner-copy-about h2 {font-size: 30px; padding: 5px;}
+  .banner-copy-about p {line-height: 22px; padding: 10px;}
+
+  /*Contact page*/
+  .speaker-form-header,
+  .speaker-form {width: 300px; margin: 0px; margin-left: 10px; padding: 0;}
+}

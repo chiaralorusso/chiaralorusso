@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/Favicon.png" type="image/png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+  <title>Chiara Lorusso</title>
+</head>
+<body>
+
+<header class="header">
+ <a href="index.html" class="header-home">Home</a>
+ <a href="" class="header-icon">
+   <span></span>
+   <span></span>
+   <span></span>
+   </a>
+  <ul class="header-menu">
+  <li class="header-menu-item"><a href="portfolio.html">Portfolio</a></li>
+  <li class="header-menu-item"><a href="skills.html">Skills</a></li>
+  <li class="header-menu-item"><a href="about.html">About</a></li>
+  </ul>
+</header>
+
+<section class="cover cover-about">
+  <div class="cover-filter"></div>
+  <div class="cover-caption">
+    <div class="cover-caption-copy">
+      <h1>About me</h1>
+      <h2><em>Formazione ed esperienza professionale </em></h2>
+
+    </div>
+  </div>
+</section>
+
+<section class="banner banner-about">
+  <div class="banner-copy banner-copy-about">
+    <h1>Ciao!</h1>
+    <h2>Sono Chiara, un'aspirante Web Designer</h2>
+    <p>Mi definisco una persona solare e creativa, con grande spirito d'iniziativa e di collaborazione.
+  <br>
+  <br> Adoro gli anime giapponesi, la musica, il cibo e nutro una passione generale per il design.</p>
+  </div>
+ </section>
+
+ <section class="cards">
+   <div class="card">
+     <div class="card-copy card-copy-about">
+       <h2>Esperienza professionale</h2>
+       <h3><strong>2019-2021</strong></h3>
+       <h4>Shop Manager</h4>
+       <p><em>Scream Tattoo Ink</em>
+       <br><br>
+          Receptionist, Social Media Manager,
+       <br>creazione di contenuti video a scopo pubblicitario.</p>
+
+       <h3><strong>2017-2019</strong></h3>
+       <h4>Addetta alle vendite</h4>
+       <p><em>IntrAppola Underground Shop</em>
+       <br><br>
+          Vendita al dettaglio, gestione E-commerce,
+       <br>collaborazione nell’organizzazione di eventi.</p>
+     </div>
+   </div>
+
+   <div class="card card-formazione">
+     <div class="card-copy card-copy-about">
+       <h2>Formazione</h2>
+       <h3><strong>2014-2019</strong></h3>
+       <h4>Diploma Liceo Linguistico</h4>
+       <p><em>Liceo Federico II di Svevia</em>
+       <br><strong>+</strong><br>
+         Esperienza triennale di Alternanza scuola-lavoro
+       <br>presso "GAL Terre di Murgia Scarl"</p>
+     </div>
+   </div>
+ </section>
+
+
+
+
+<footer class="footer">
+  <div class="contacts">
+    <a href="mailto:lorussochiara5@gmail.com" style="color: #fff; text-decoration: none;">Email</a>
+  &nbsp; - &nbsp;
+    <a href="https://www.instagram.com/_chiaralorusso_/" style="color: #fff; text-decoration: none;" target="_blank">Instagram</a>
+  <br>
+  <h4>© Copyright - Chiara Lorusso 2021</h4>
+  </div>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+    $(".header-icon").click(function(e){
+
+      $(".header-menu").toggleClass("is-open");
+      e.preventDefault();
+    });
+  });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
